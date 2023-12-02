@@ -1,0 +1,58 @@
+@import "@/assets/theme.scss";
+
+.dataTableContainer {
+  margin-top: 20px;
+  border-radius: 15px;
+}
+
+.dataTable {
+  margin-top: 10px;
+  .ant-table-title {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+  }
+  .ant-pagination-item-link {
+    border-radius: 10px;
+  }
+  .ant-pagination-item {
+    border-radius: 10px;
+  }
+}
+.cardTitle {
+  border-radius: 30px;
+  margin-top: -35px;
+  margin-bottom: 15px;
+  font-size: 18px;
+  border: none;
+  color: $white;
+  &.dark {
+    background: linear-gradient(195deg, $gradientDark, $dark);
+    box-shadow: 0rem 0.25rem 1.25rem 0rem rgba(0, 0, 0, 0.14),
+      0rem 0.4375rem 0.625rem -0.3125rem rgba(136, 136, 136, 0.4);
+  }
+  &.primary {
+    background: linear-gradient(195deg, $gradientPrimary, $primary);
+    box-shadow: 0rem 0.25rem 1.25rem 0rem rgba(0, 0, 0, 0.14),
+      0rem 0.4375rem 0.625rem -0.3125rem rgba(0, 225, 255, 0.4);
+  }
+  &.success {
+    background: linear-gradient(195deg, $gradientSuccess, $success);
+    box-shadow: 0rem 0.25rem 1.25rem 0rem rgb(0 0 0 / 14%),
+      0rem 0.4375rem 0.625rem -0.3125rem rgba(73, 226, 78, 0.4);
+  }
+  &.error {
+    background: linear-gradient(195deg, $gradientDanger, $danger);
+    box-shadow: 0rem 0.25rem 1.25rem 0rem rgb(0 0 0 / 14%),
+      0rem 0.4375rem 0.625rem -0.3125rem rgba(255, 3, 3, 0.4);
+  }
+  &.warning {
+    background: linear-gradient(195deg, $gradientWarning, $warning);
+    box-shadow: 0rem 0.25rem 1.25rem 0rem rgb(0 0 0 / 14%),
+      0rem 0.4375rem 0.625rem -0.3125rem rgba(255, 251, 0, 0.4);
+  }
+  &.alternative {
+    background: linear-gradient(195deg, $gradientAlternative, $alternative);
+    box-shadow: 0rem 0.25rem 1.25rem 0rem rgb(0 0 0 / 14%),
+      0rem 0.4375rem 0.625rem -0.3125rem rgba(163, 3, 255, 0.4);
+  }
+}

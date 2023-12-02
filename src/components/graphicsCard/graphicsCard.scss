@@ -1,0 +1,78 @@
+@import "@/assets/theme.scss";
+
+.graphicsCardContainer {
+  animation: scaleCard 300ms ease forwards;
+  margin: 25px 10px;
+  border-radius: 15px;
+  .ant-card-body {
+    padding: 10px;
+  }
+}
+
+.iconCardContainer {
+  min-width: fit-content;
+  min-height: fit-content;
+  border: none;
+  border-radius: 15px;
+  text-align: center;
+  margin-top: -32px;
+  font-size: 25px;
+  color: $white;
+  &.dark {
+    background: linear-gradient(195deg, $gradientDark, $dark);
+    box-shadow: 0rem 0.25rem 1.25rem 0rem rgba(0, 0, 0, 0.14),
+      0rem 0.4375rem 0.625rem -0.3125rem rgba(70, 70, 70, 0.4);
+  }
+  &.primary {
+    background: linear-gradient(195deg, $gradientPrimary, $primary);
+    box-shadow: 0rem 0.25rem 1.25rem 0rem rgba(0, 0, 0, 0.14),
+      0rem 0.4375rem 0.625rem -0.3125rem rgba(0, 225, 255, 0.4);
+  }
+  &.success {
+    background: linear-gradient(195deg, $gradientSuccess, $success);
+    box-shadow: 0rem 0.25rem 1.25rem 0rem rgb(0 0 0 / 14%),
+      0rem 0.4375rem 0.625rem -0.3125rem rgba(73, 226, 78, 0.4);
+  }
+  &.error {
+    background: linear-gradient(195deg, $gradientDanger, $danger);
+    box-shadow: 0rem 0.25rem 1.25rem 0rem rgb(0 0 0 / 14%),
+      0rem 0.4375rem 0.625rem -0.3125rem rgba(255, 3, 3, 0.4);
+  }
+  &.warning {
+    background: linear-gradient(195deg, $gradientWarning, $warning);
+    box-shadow: 0rem 0.25rem 1.25rem 0rem rgb(0 0 0 / 14%),
+      0rem 0.4375rem 0.625rem -0.3125rem rgba(255, 251, 0, 0.4);
+  }
+  &.alternative {
+    background: linear-gradient(195deg, $gradientAlternative, $alternative);
+    box-shadow: 0rem 0.25rem 1.25rem 0rem rgb(0 0 0 / 14%),
+      0rem 0.4375rem 0.625rem -0.3125rem rgba(163, 3, 255, 0.4);
+  }
+  .ant-card-body {
+    padding: 10px;
+  }
+}
+.statisticsClass {
+  .ant-statistic {
+    text-align: right;
+  }
+  .ant-statistic-content-value {
+    font-size: 20px;
+    font-weight: bold;
+    font-family: "IBM Plex Mono", monospace;
+  }
+}
+.dividerClass {
+  margin: 8px 0px;
+}
+
+@keyframes scaleCard {
+  0% {
+    opacity: 0.25;
+    transform: scale(0.25);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}

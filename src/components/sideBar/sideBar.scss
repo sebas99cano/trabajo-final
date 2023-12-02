@@ -1,0 +1,29 @@
+@import "@/assets/theme.scss";
+.sideBarContainer {
+  overflow-y: auto;
+  height: calc(100vh - 75px);
+  text-align: center;
+  transform-origin: -50% 100%;
+  animation: appearFromLeft 500ms ease forwards;
+}
+
+.sideBarContainer::-webkit-scrollbar {
+  width: 7px;
+}
+
+.sideBarContainer::-webkit-scrollbar-thumb {
+  background-color: $gradientPrimary;
+  border-radius: 5px;
+  max-height: 200px;
+}
+
+@keyframes appearFromLeft {
+  0% {
+    opacity: 0.25;
+    transform: scale(0.25);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}

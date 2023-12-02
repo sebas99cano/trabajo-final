@@ -1,0 +1,21 @@
+@import "@/assets/theme.scss";
+
+.cardImageContainer {
+  display: flex;
+  align-items: center;
+  position: relative;
+  min-height: 40%;
+  opacity: 1;
+  color: $primary;
+  box-shadow: none;
+  background: linear-gradient(
+      195deg,
+      rgba(0, 225, 255, 0.4),
+      rgba(0, 225, 255, 0.4)
+    ),
+    url("https://demos.creative-tim.com/material-dashboard-react/static/media/bg-profile.af1219a742e09fc7b612.jpeg")
+      transparent;
+  border-radius: 0.75rem;
+  background-position: 50% center;
+  overflow: hidden;
+}

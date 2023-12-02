@@ -1,0 +1,42 @@
+@import "./theme.scss";
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&family=Montserrat:wght@400;500&family=Open+Sans:wght@500&family=Poppins:wght@500;600&display=swap");
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+body::-webkit-scrollbar {
+  width: 7px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: $gradientPrimary;
+  border-radius: 5px;
+}
+
+.contentClass {
+  min-height: calc(100vh - 64px);
+}
+
+.fullHeight {
+  min-height: 100vh;
+}
+
+.ant-layout-content {
+  padding: 20px;
+  height: 100%;
+  background-color: $gray-1;
+}
+
+.ant-btn {
+  border-radius: 5px;
+}
+
+.ant-card {
+  border-radius: 5px;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+}
+
+.ant-card:hover {
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+}

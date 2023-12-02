@@ -1,0 +1,60 @@
+@import "@/assets/theme.scss";
+
+.ant-page-header.headerClass {
+  border-bottom: inset;
+  padding: 10px 15px;
+  animation: appearFromTop 500ms ease;
+}
+
+.headerClass {
+  position: fixed;
+  z-index: 1;
+  width: "100%";
+  .ant-page-header-heading {
+    display: flex;
+    flex-direction: row-reverse;
+    float: left;
+    transform: translateY(-100%);
+    animation: popUpAppear 500ms ease forwards 500ms;
+  }
+  .ant-page-header-heading-extra {
+    margin-right: 15px;
+  }
+}
+
+.drawerClass {
+  .ant-drawer-header {
+    display: none;
+  }
+  .ant-drawer-body {
+    padding: 0px;
+  }
+}
+
+@keyframes appearFromTop {
+  0% {
+    transform: translate(0%, -100%);
+  }
+  100% {
+    transform: translate(0%, 0%);
+  }
+}
+
+@keyframes popUpAppear {
+  0% {
+    opacity: 0.25;
+    transform: scale(0.25);
+  }
+  33% {
+    opacity: 1;
+    transform: scale(1.5);
+  }
+  66% {
+    opacity: 1;
+    transform: scale(0.75);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}

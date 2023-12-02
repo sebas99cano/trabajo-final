@@ -1,0 +1,54 @@
+.tasksListContainer {
+  .ant-card-head {
+    padding: 0px 12px;
+  }
+  .ant-card-head-title {
+    padding: 12px 0px;
+  }
+  .ant-card-extra {
+    padding: 12px 0px;
+  }
+  .ant-card-body {
+    padding: 12px;
+  }
+}
+
+.menuTasksList {
+  position: absolute;
+  z-index: 1;
+  max-width: 200px;
+}
+
+.singleTask {
+  margin-bottom: 10px;
+  .ant-card-body {
+    padding: 10px;
+  }
+}
+
+.addButton {
+  width: 100%;
+}
+.addTitleForm {
+  .inputTitle {
+    margin: 5px 0px 10px 0px;
+  }
+  .addButtonConfirm {
+    width: 48%;
+    margin-right: 4%;
+  }
+  .addButtonCancel {
+    width: 48%;
+    text-align: center;
+  }
+}
+
+.taskContainer {
+  .ant-col {
+    min-height: 32px;
+  }
+  .spanText {
+    width: 100%;
+    vertical-align: sub;
+  }
+}
