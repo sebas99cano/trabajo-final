@@ -22,18 +22,10 @@ const useDashboard = () => {
     total: 0,
   });
 
-  const [loans, setLoans] = useState({
-    name: [],
-    value: [],
-    loading: false,
-    total: 0,
-  });
-
   useEffect(() => {
     if (authState?.uid) {
       getAllEarnings();
       getAllExpenses();
-      getAllLoans();
     }
   }, [authState?.uid]);
 
@@ -83,34 +75,10 @@ const useDashboard = () => {
       });
   };
 
-  const getAllLoans = () => {
-    setLoans({ ...loans, loading: true });
-    LoansService.getAllLoansByUid(authState.uid)
-      .then((response) => {
-        const responseData = [];
-        response.forEach((doc) => {
-          responseData.push(doc.data());
-        });
-        setLoans({
-          name: responseData.map((element) => element.name),
-          value: responseData.map((element) => element.value),
-          loading: false,
-          total: responseData.reduce(
-            (acumulador, element) => acumulador + element.value,
-            0
-          ),
-        });
-      })
-      .catch((error) => {
-        console.error(error);
-      });
-  };
-
   return {
     generalDictionary,
     earnings,
     expenses,
-    loans,
   };
 };
 
